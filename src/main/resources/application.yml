@@ -1,0 +1,29 @@
+## Configuracion de Spring
+spring:
+  application:
+    name: ms-inventory-products
+
+## Configuracion de Instancia 
+server:
+  port: 0
+  fullAddress: ${HOST:http://localhost}:${PORT:${server.port}}
+
+## Configuracion del cliente de Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:https://svxggwb4-8761.use.devtunnels.ms/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: ms-inventory-products
+    instance-id: ${spring.application.name}:${random.uuid}
+
+##Elasticsearch config
+elasticsearch:
+  host: cluster-unir-4352502836.us-east-1.bonsaisearch.net
+  credentials:
+    user: uy92sz462u
+    password: gdkhabv26c
+logging:
+  level:
+    tracer: TRACE
