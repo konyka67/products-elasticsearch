@@ -16,7 +16,6 @@ eureka:
   instance:
     preferIpAddress: true
     hostname: ms-inventory-products
-    instance-id: ${spring.application.name}:${random.uuid}
 
 ##Elasticsearch config
 elasticsearch:
