@@ -18,13 +18,12 @@ eureka:
   instance:
     preferIpAddress: true
     hostname: ${HOSTNAME:localhost}
-
 ##Elasticsearch config
 elasticsearch:
-  host: cluster-unir-4352502836.us-east-1.bonsaisearch.net
+  host: micampanygiovanni-se-8287637583.us-east-1.bonsaisearch.net
   credentials:
-    user: uy92sz462u
-    password: gdkhabv26c
+    user: tq262nbt2y
+    password: i8mxwtmhbc
 logging:
   level:
     tracer: TRACE
